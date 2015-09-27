@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+<script>
+function submitDetailsCustomer() {	
+	 alert('inside submitDetailsCust');
+	 
+	 
+		 var varAction = 'LoginServlet'; //'Registration?userId' + userId + '&function=' + funct;	
+		 //alert('submitting varAction: ' + varAction);
+		 document.forms["login"].action = varAction;
+		 //alert("action completed");
+		 
+		 document.forms["login"].method = "POST";
+		 //alert("method completed");
+		 document.forms["login"].submit();	
+		 //alert("submit completed");
+	 
+}
+	 function submitDetailsAdmin() {	
+		
+		 
+			 var varAction = 'LoginAdmin'; //'Registration?userId' + userId + '&function=' + funct;	
+			 //alert('submitting varAction: ' + varAction);
+			 document.forms["login"].action = varAction;
+			 //alert("action completed");
+			 
+			 document.forms["login"].method = "POST";
+			 //alert("method completed");
+			 document.forms["login"].submit();	
+			 //alert("submit completed");
+		 
+	 }
+
+</script>
+
+</head>
+
+<body class="align">
+
+	<div class="site__container">
+
+
+		<div class="grid__container">
+		<div id="h">BOOK MAFIA</div>
+			<form action="#" method="post" class="form form--login" name="login">
+
+				<div class="form__field">
+					<label class="fontawesome-user" for="login__username"><span
+						class="hidden">Username</span></label> <input id="login__username"
+						type="text" class="form__input" placeholder="Username" required
+						name="username">
+				</div>
+
+				<div class="form__field">
+					<label class="fontawesome-lock" for="login__password"><span
+						class="hidden">Password</span></label> <input id="login__password"
+						type="password" class="form__input" placeholder="Password"
+						required name="password">
+				</div>
+
+				<div class="form__field">
+					<input type="submit" value="Sign In" onclick=submitDetailsCustomer()>
+				</div>
+				
+			</form>
+
+			<p class="text--center">
+				Not a member? <a href="Register.html">Sign up now</a> <span
+					class="fontawesome-arrow-right"></span>
+			</p>
+			
+				<div>
+				<a href="#" onclick="submitDetailsAdmin()">Login as a admin</a>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+
+
+
+
+
+
+</html>

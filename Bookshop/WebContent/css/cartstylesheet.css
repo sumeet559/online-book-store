@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+
+@font-face {
+   font-family: sanket;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  }
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(Ailerons.ttf);
+   font-stretch:expanded;
+  }
+#headingfont{
+	/*text-align: center;*/
+	
+	font-family: myFirstFont;
+	font-weight: bold;
+	height: 110px;
+	font-size: 110px;
+	padding-bottom: 20px;
+	text-shadow:0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	 width: 64%;
+	 color: white;
+	 background-color: inherit;
+	 margin-left:32%;
+	 
+	  
+}
+header {
+	height: 200px;
+	background-color: black;
+}
+
+*,*:after,*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	
+	
+}
+
+nav {
+	/* background-color:#ecf0f1; */
+	background: #3fa46a;
+	box-shadow: 4px 4px 15px black;
+}
+
+nav a {
+	position: relative;
+	right: -30%;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: white; text-decoration : none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+	font-size: 1.05em;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+}
+
+nav a:hover,nav a:focus {
+	outline: none;
+}
+
+
+/*content*/
+#content {
+	background-color:#D9D9D9;
+	min-height:100%;
+}
+table{
+	width:70%;
+	margin-left:15%;
+	padding-top:60px;
+	
+}
+td {
+	 border: 1px solid grey;
+	text-align:center;
+	font: 400 1.2rem/1 "Open Sans", sans-serif;
+    padding: 30px;
+}
+td a img{
+	float:left;
+	width:100px;
+	height:150px;
+}
+td a{
+	text-decoration: none;
+	color:black;
+}
+
+
+#order{
+width:10%;
+display:inline-block;
+margin-left:45%;
+margin-top:40px;
+margin-bottom:40px;
+}
+#order a img{
+	width:100%;
+}
+footer{
+	background-color: black;
+	height:200px;
+	color:white;
+	
+}
